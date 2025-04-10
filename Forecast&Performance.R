@@ -10,7 +10,7 @@ library(lubridate)
 # Load the dataset
 NGO_Data_Expanded <- read_csv("NGO_Data_Expanded.csv")
 
-# Forecasting function using monthly data with SMAPE and smoothing
+# Forecasting function using monthly data
 forecast_and_evaluate <- function(area, aid_type, forecast_months = 3) {
   cat("\nProcessing:", aid_type, "in", area, "\n")
   
